@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('WorldMap.png');
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav a.current {
+    font-weight: bold;
+    color: #ff5733; /* Highlighted color for the current page */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+main {
+    padding: 20px;
+}
+
+ul {
+    list-style-image: url('Basketball.pngS'); /* Custom bullet image */
+
+    height: 60px;
+    width: 60px;
+}
+
+#eiffel {
+    height: 200px;
+    width: 200px;
+}
+
+#China {
+    height: 200px;
+    width: 200px;
+}
+
+#Statue {
+    height: 200px;
+    width: 200px;
+}
+
+#Machu {
+    height: 200px;
+    width: 200px;
+
+}
