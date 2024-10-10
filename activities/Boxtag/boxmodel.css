@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
+
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+    background-color: yellow;
+    border: thin solid black;
+}
+
+
+header{
+    background-color: rgb(98, 117, 133);
+    margin: 30%;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(98, 117, 133);
+    margin-top: 30%;
+    text-align: center;
+}
+figure {
+    border: thin solid #000;
+    width: 250;
+    
+}
+
+img {
+    width: 300px;
+    
+}
+
+figcaption{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
