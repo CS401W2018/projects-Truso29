@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav a{
+    display: block;
+    padding: 10px 5px;
+}
+
+
+#pic1{
+    width: 200px;
+    border: 1px solid black;
+    float: right;
+}
+
+#pic1 img{
+    width: 200px;
+}
+
+#pic2{
+    width: 200px;
+    border: 1px solid black;
+    float: right;
+}
+
+#pic2 img{
+    width: 200px;
+
+}
