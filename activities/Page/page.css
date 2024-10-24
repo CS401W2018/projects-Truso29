@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #004f8f;;
+}
+nav {
+    background-color: #004f8f;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.Samoa{
+    width: 200px;
+    border: thin solid black;
+    box-shadow: 5px 5px 5px 0 rgba(50, 50, 50, 1.0);
+    
+    
+}
+
+.Samoa img {
+    width: 100%;
+}
+
+.Row{
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+
+}
