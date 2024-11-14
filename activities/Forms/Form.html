@@ -26,5 +26,24 @@
           <input type="submit" value="Sign Up">
         </form>
       </div>
+      <footer>
+          <p>&copy;2024 Tristan Bradley</p>
+      </footer>
+      <script>
+          document.getElementById('myForm').addEventListener('submit', function(event){
+              event.preventDefault();
+              const name = document.getElementById('name').value;
+              alert("Form Sign Up");
+          })
+      </script>
+
+      <h2>What is JavaScript? How did it get its name?</h2>
+      <p>JavaScript is a dynamic programming language primarily used for web development. I was developed in 1995 by Brendan Eich </p>
+      <h2>What are the two ways you can run JavaScript?</h2>
+      <p>In the browser and in the server</p>
+      <h2>What was the most popular front-end js library?</h2>
+      <p> It simplified DOM manipulation, event handling, and AJAX calls, making it accessible for developers. </p>
+      <h2>What is the most popular front-end js library today?</h2>
+      <p>Developed by Facebook, React allows developers to build user interfaces with reusable components.</p>
 </body>
 </html>
