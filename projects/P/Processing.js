@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (e) => {
       e.preventDefault(); // Prevent default form submission
   
-      // Collect form data into an object
+      // Collect form data into an objectr
       const formData = {
         name: document.getElementById("name").value.trim(),
         email: document.getElementById("email").value.trim(),
@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
   
       xhr.send(); // Send request
+    
     });
   });
   
