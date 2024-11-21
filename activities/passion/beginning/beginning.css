@@ -1,0 +1,43 @@
+/* General styles for both pages */
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Default font color */
+    font-size: 16px; /* Default font size */
+    background-color: #f4f4f4; /* Background color */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Emphasizing text color */
+.important {
+    color: #d9534f; /* Color to draw attention */
+}
+
+/* De-emphasizing text color */
+.secondary {
+    color: #999; /* Color to hide attention */
+}
+
+/* Title styling */
+#page-title {
+    font-size: 24px;
+    color: #333; /* Keeping title color consistent */
+    margin-bottom: 20px;
+}
+
+/* UL styling */
+ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Span styling */
+.highlight {
+    background-color: #d9edf7; /* Light background for highlighted text */
+    padding: 2px 5px;
+    border-radius: 3px;
+}
