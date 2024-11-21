@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.audio-container, .video-container, .youtube-container {
+    margin: 20px;
+}
+
+.transform-container {
+    margin-top: 30px;
+}
+
+.transform-box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 auto;
+}
+
+.transform-box:hover {
+    transform: rotate(45deg) scale(1.2);
+}
