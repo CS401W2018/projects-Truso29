@@ -1,38 +1,51 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the default form submission
+  event.preventDefault();  // Prevent the default form submission
 
-  // Collect form data
+  // Collect form data into an object
   const formData = new FormData(this);
   const data = {};
   formData.forEach((value, key) => {
       data[key] = value;
   });
 
-  // Create a new XHR request
+  // Validate form data
+  if (!data.name || !data.email || !data.message) {
+      alert("Please fill out all required fields (Name, Email, and Message).");
+      return;
+  }
+
+  // Validate age (ensure it is a number between 18 and 100)
+  const age = parseInt(data.age);
+  if (isNaN(age) || age < 18 || age > 100) {
+      alert("Please enter a valid age between 18 and 100.");
+      return;
+  }
+
+  // Log the form data to the console
+  console.log(data);
+
+  // AJAX request to send form data to server
   const xhr = new XMLHttpRequest();
-  
-  // Open a request to a mock server or local .json file
-  xhr.open('POST', 'response.json', true); // Adjust the URL to your actual endpoint if needed
-  
-  // Set the request header to inform the server the body contains JSON
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  
-  // Handle the response from the server
+
+  // Open the XHR request to mock response.json (using GET here for GitHub Pages compatibility)
+  xhr.open('GET', 'response.json', true);
+
+  // Handle the response
   xhr.onload = function() {
       if (xhr.status >= 200 && xhr.status < 300) {
-          // Parse the JSON response
           const response = JSON.parse(xhr.responseText);
 
-          // Check if the response status is 'success'
+          // Check if the response is successful
           if (response.status === 'success') {
-              // Display success message
+              // Display the success message
               const responseMessageDiv = document.getElementById('responseMessage');
               responseMessageDiv.style.display = 'block';
               responseMessageDiv.innerHTML = response.message;
 
-              // Optionally, reset the form or disable fields
+              // Reset the form after successful submission
               document.getElementById('contactForm').reset();
-              // Or disable the form elements
+
+              // Optionally, disable form fields after submission
               document.querySelectorAll('#contactForm input, #contactForm textarea, #contactForm button').forEach(input => {
                   input.disabled = true;
               });
@@ -47,6 +60,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       console.error('Request failed');
   };
 
-  // Send the form data as JSON
-  xhr.send(JSON.stringify(data));
+  // Send the form data as JSON (Here we're sending data as JSON, but using GET for GitHub Pages)
+  xhr.send();
 });
